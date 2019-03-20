@@ -1,4 +1,16 @@
 /* variables */
+/* mixins */
+.standard_text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.65em;
+}
+.standard_colors {
+  color: #fff;
+  background-color: #909090;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,4 +146,16 @@ table {
 html,
 body {
   height: 100%;
+  background-color: #505393;
+}
+p {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.65em;
+}
+section {
+  color: #fff;
+  background-color: #909090;
 }
