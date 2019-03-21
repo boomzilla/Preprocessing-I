@@ -1,5 +1,4 @@
 /* variables */
-/* mixins */
 .standard_text {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
@@ -155,7 +154,17 @@ p {
   letter-spacing: 0.075em;
   line-height: 1.65em;
 }
-section {
+article {
   color: #fff;
   background-color: #909090;
+  /*the following are all contingent on media type*/
+  /* here is for "normal" (i.e. desktop)*/
+  width: 80%;
+  margin: auto;
+}
+article header {
+  width: 100%;
+}
+article section {
+  width: 50%;
 }

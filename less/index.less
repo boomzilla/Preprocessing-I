@@ -5,12 +5,11 @@
 @standard_font_weight: 400;
 @standard_letter_spacing: 0.075em;
 @standard_line_height: 1.65em;
+@article-width-desktop: 80%;
 
 @standard_font_color: #fff;
 @standard_primary_color: #909090;
 @standard_secondary_color: #505393;
-
-/* mixins */
 
 .standard_text{
 	font-family: @standard_font_family;
@@ -89,6 +88,19 @@ p {
 	.standard_text();
 }
 
-section{
-	.standard_colors();
+article {
+	.standard_colors();;
+
+	/*the following are all contingent on media type*/
+	/* here is for "normal" (i.e. desktop)*/
+	width: @article-width-desktop;
+	margin: auto;
+
+	header {
+		width: 100%;
+	}
+
+	section {
+		width: 50%;
+	}
 }
