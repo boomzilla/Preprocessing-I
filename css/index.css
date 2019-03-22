@@ -1,4 +1,11 @@
 /* variables */
+.main_header_text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.35em;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.65em;
+}
 .standard_text {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
@@ -147,6 +154,13 @@ body {
   height: 100%;
   background-color: #505393;
 }
+h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.35em;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.65em;
+}
 p {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 15pt;
@@ -161,10 +175,21 @@ article {
   /* here is for "normal" (i.e. desktop)*/
   width: 80%;
   margin: auto;
+  /* mobile layout */
 }
 article header {
   width: 100%;
 }
-article section {
+article header h1 {
+  width: 50%;
+  text-align: center;
+}
+article header img {
+  width: 50%;
+}
+article section .tech-skills li {
+  display: inline;
+}
+article section .half-section {
   width: 50%;
 }

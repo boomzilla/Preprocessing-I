@@ -1,15 +1,27 @@
 /* variables */
 
+@main_header_font_size: 1.35em;
+@main_header_line_height: 1.65em;
+
 @standard_font_family: "Open Sans", Helvetica, sans-serif;
 @standard_font_size: 15pt;
 @standard_font_weight: 400;
 @standard_letter_spacing: 0.075em;
 @standard_line_height: 1.65em;
+
 @article-width-desktop: 80%;
 
 @standard_font_color: #fff;
 @standard_primary_color: #909090;
 @standard_secondary_color: #505393;
+
+.main_header_text{
+	font-family: @standard_font_family;
+	font-size: @main_header_font_size;
+	font-weight: @standard_font_weight;
+	letter-spacing: @standard_letter_spacing;
+	line-height: @main_header_line_height;
+}
 
 .standard_text{
 	font-family: @standard_font_family;
@@ -84,12 +96,16 @@ html, body {
 	background-color: @standard_secondary_color;
 }
 
+h1 {
+	.main_header_text();
+}
+
 p {
 	.standard_text();
 }
 
 article {
-	.standard_colors();;
+	.standard_colors();
 
 	/*the following are all contingent on media type*/
 	/* here is for "normal" (i.e. desktop)*/
@@ -98,9 +114,29 @@ article {
 
 	header {
 		width: 100%;
+
+		h1 {
+			width: 50%;
+			text-align: center;
+			
+		}
+
+		img {
+			width: 50%;
+		}
 	}
 
 	section {
-		width: 50%;
+		.tech-skills {
+			li {
+				display: inline;
+			}
+		}
+
+		.half-section {
+			width: 50%;
+		}
 	}
+
+	/* mobile layout */
 }
